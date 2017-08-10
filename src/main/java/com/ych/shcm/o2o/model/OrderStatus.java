@@ -47,7 +47,12 @@ public enum OrderStatus implements IntValueHolder<OrderStatus> {
     /**
      * 线下退款
      */
-    REFUNDED_OFF_LINE(8);
+    REFUNDED_OFF_LINE(8),
+
+    /**
+     * 已失效
+     */
+    INVALID(9);
 
     private int value;
 

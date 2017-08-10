@@ -1,6 +1,7 @@
 package com.ych.shcm.o2o.openinf;
 
 import com.ych.shcm.o2o.model.OrderStatus;
+
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
@@ -61,6 +62,11 @@ public class OrderEventNotifyPayload {
      * 退款时间
      */
     private Date refundTime;
+
+    /**
+     * 失效时间
+     */
+    private Date invalidTime;
 
     /**
      * @return 订单号
@@ -211,6 +217,21 @@ public class OrderEventNotifyPayload {
      */
     public void setRefundTime(Date refundTime) {
         this.refundTime = refundTime;
+    }
+
+    /**
+     * @return 失效时间
+     */
+    public Date getInvalidTime() {
+        return invalidTime;
+    }
+
+    /**
+     * @param invalidTime
+     *         失效时间
+     */
+    public void setInvalidTime(Date invalidTime) {
+        this.invalidTime = invalidTime;
     }
 
     @Override
