@@ -1,6 +1,6 @@
 package com.ych.shcm.o2o.parameter;
 
-import com.ych.core.model.BasePaginableMultiSortableParameter;
+import com.ych.core.model.BasePaginableSortableParameter;
 
 import java.math.BigDecimal;
 
@@ -9,7 +9,7 @@ import java.math.BigDecimal;
  *
  * @author U
  */
-public class QueryOrderAppointmentListParameter extends BasePaginableMultiSortableParameter {
+public class QueryOrderAppointmentListParameter extends BasePaginableSortableParameter {
 
     /**
      * 订单id
