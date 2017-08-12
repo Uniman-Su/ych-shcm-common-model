@@ -70,6 +70,16 @@ public class QueryOrderListParameter extends BasePaginableMultiSortableParameter
     private boolean needPacks = false;
 
     /**
+     * 修改时间起始
+     */
+    private Date modifyTimeBegin;
+
+    /**
+     * 修改时间截止
+     */
+    private Date modifyTimeEnd;
+
+    /**
      * Gets order no.
      *
      * @return 订单号
@@ -264,5 +274,35 @@ public class QueryOrderListParameter extends BasePaginableMultiSortableParameter
      */
     public void setNeedPacks(boolean needPacks) {
         this.needPacks = needPacks;
+    }
+
+    /**
+     * @return 修改时间起始
+     */
+    public Date getModifyTimeBegin() {
+        return modifyTimeBegin;
+    }
+
+    /**
+     * @param modifyTimeBegin
+     *         修改时间起始
+     */
+    public void setModifyTimeBegin(Date modifyTimeBegin) {
+        this.modifyTimeBegin = modifyTimeBegin;
+    }
+
+    /**
+     * @return 修改时间起始
+     */
+    public Date getModifyTimeEnd() {
+        return modifyTimeEnd;
+    }
+
+    /**
+     * @param modifyTimeEnd
+     *         修改时间起始
+     */
+    public void setModifyTimeEnd(Date modifyTimeEnd) {
+        this.modifyTimeEnd = modifyTimeEnd;
     }
 }
