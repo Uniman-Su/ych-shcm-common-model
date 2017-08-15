@@ -37,7 +37,7 @@ public class QueryServiceProviderSettleParameter extends BasePaginableParameter 
     /**
      * 服务商ID
      */
-    private Date serviceProviderId;
+    private BigDecimal serviceProviderId;
 
     /**
      * 状态
@@ -107,7 +107,7 @@ public class QueryServiceProviderSettleParameter extends BasePaginableParameter 
     /**
      * @return 服务商ID
      */
-    public Date getServiceProviderId() {
+    public BigDecimal getServiceProviderId() {
         return serviceProviderId;
     }
 
@@ -115,7 +115,7 @@ public class QueryServiceProviderSettleParameter extends BasePaginableParameter 
      * @param serviceProviderId
      *         服务商ID
      */
-    public void setServiceProviderId(Date serviceProviderId) {
+    public void setServiceProviderId(BigDecimal serviceProviderId) {
         this.serviceProviderId = serviceProviderId;
     }
 
