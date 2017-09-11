@@ -49,6 +49,16 @@ public class GuaranteeRequestPayload {
     private Date expires;
 
     /**
+     * 上牌时间
+     */
+    private Date registrationTime;
+
+    /**
+     * 里程
+     */
+    private Long mileage = 0l;
+
+    /**
      * @return 用户电话号码
      */
     public String getPhone() {
@@ -151,6 +161,36 @@ public class GuaranteeRequestPayload {
      */
     public void setExpires(Date expires) {
         this.expires = expires;
+    }
+
+    /**
+     * @return 上牌时间
+     */
+    public Date getRegistrationTime() {
+        return registrationTime;
+    }
+
+    /**
+     * @param registrationTime
+     *         上牌时间
+     */
+    public void setRegistrationTime(Date registrationTime) {
+        this.registrationTime = registrationTime;
+    }
+
+    /**
+     * @return 里程
+     */
+    public Long getMileage() {
+        return mileage;
+    }
+
+    /**
+     * @param mileage
+     *         里程
+     */
+    public void setMileage(Long mileage) {
+        this.mileage = mileage;
     }
 
     @Override

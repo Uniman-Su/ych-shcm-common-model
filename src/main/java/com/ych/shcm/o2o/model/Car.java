@@ -68,6 +68,16 @@ public class Car implements Serializable, IWithCreateTime {
     private Date createTime;
 
     /**
+     * 上牌时间
+     */
+    private Date registrationTime;
+
+    /**
+     * 里程
+     */
+    private Long mileage = 0l;
+
+    /**
      * 车型
      */
     private CarModel carModel;
@@ -216,6 +226,36 @@ public class Car implements Serializable, IWithCreateTime {
     @Override
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    /**
+     * @return 上牌时间
+     */
+    public Date getRegistrationTime() {
+        return registrationTime;
+    }
+
+    /**
+     * @param registrationTime
+     *         上牌时间
+     */
+    public void setRegistrationTime(Date registrationTime) {
+        this.registrationTime = registrationTime;
+    }
+
+    /**
+     * @return 里程
+     */
+    public Long getMileage() {
+        return mileage;
+    }
+
+    /**
+     * @param mileage
+     *         里程
+     */
+    public void setMileage(Long mileage) {
+        this.mileage = mileage;
     }
 
     /**
