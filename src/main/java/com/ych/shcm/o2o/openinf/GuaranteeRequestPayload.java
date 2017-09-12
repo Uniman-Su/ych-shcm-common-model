@@ -55,7 +55,7 @@ public class GuaranteeRequestPayload {
     /**
      * 里程
      */
-    private long mileage;
+    private Long mileage = 0l;
 
     /**
      * @return 用户电话号码
@@ -186,7 +186,7 @@ public class GuaranteeRequestPayload {
      *
      * @return 里程
      */
-    public long getMileage() {
+    public Long getMileage() {
         return mileage;
     }
 
@@ -196,7 +196,7 @@ public class GuaranteeRequestPayload {
      * @param mileage
      *         里程
      */
-    public void setMileage(long mileage) {
+    public void setMileage(Long mileage) {
         this.mileage = mileage;
     }
 

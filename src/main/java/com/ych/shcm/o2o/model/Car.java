@@ -75,7 +75,7 @@ public class Car implements Serializable, IWithCreateTime {
     /**
      * 里程
      */
-    private long mileage;
+    private Long mileage;
 
     /**
      * 车型
@@ -233,7 +233,7 @@ public class Car implements Serializable, IWithCreateTime {
      *
      * @return 里程
      */
-    public long getMileage() {
+    public Long getMileage() {
         return mileage;
     }
 
@@ -243,7 +243,7 @@ public class Car implements Serializable, IWithCreateTime {
      * @param mileage
      *         里程
      */
-    public void setMileage(long mileage) {
+    public void setMileage(Long mileage) {
         this.mileage = mileage;
     }
 
