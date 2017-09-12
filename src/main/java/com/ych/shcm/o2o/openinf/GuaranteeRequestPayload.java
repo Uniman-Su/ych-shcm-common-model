@@ -1,11 +1,10 @@
 package com.ych.shcm.o2o.openinf;
 
-import java.util.Date;
-
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import java.util.Date;
 
 /**
  * 车辆参保的请求信息
@@ -47,6 +46,16 @@ public class GuaranteeRequestPayload {
      * 延保过期时间
      */
     private Date expires;
+
+    /**
+     * 上牌时间
+     */
+    private Date registrationTime;
+
+    /**
+     * 里程
+     */
+    private long mileage;
 
     /**
      * @return 用户电话号码
@@ -151,6 +160,44 @@ public class GuaranteeRequestPayload {
      */
     public void setExpires(Date expires) {
         this.expires = expires;
+    }
+
+    /**
+     * 上牌时间
+     *
+     * @return 上牌时间
+     */
+    public Date getRegistrationTime() {
+        return registrationTime;
+    }
+
+    /**
+     * 上牌时间
+     *
+     * @param registrationTime
+     *         上牌时间
+     */
+    public void setRegistrationTime(Date registrationTime) {
+        this.registrationTime = registrationTime;
+    }
+
+    /**
+     * 里程
+     *
+     * @return 里程
+     */
+    public long getMileage() {
+        return mileage;
+    }
+
+    /**
+     * 里程
+     *
+     * @param mileage
+     *         里程
+     */
+    public void setMileage(long mileage) {
+        this.mileage = mileage;
     }
 
     @Override
